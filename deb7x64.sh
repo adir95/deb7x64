@@ -62,6 +62,14 @@ echo "
 INSTALLER PROCESS PLEASE WAIT
 TAKE TIME 5-10 MINUTE
 "
+# install screenfetch
+cd
+wget https://github.com/KittyKatt/screenFetch/raw/master/screenfetch-dev
+mv screenfetch-dev /usr/bin/screenfetch
+chmod +x /usr/bin/screenfetch
+echo "clear" >> .profile
+echo "screenfetch" >> .profile
+
 # login setting
 echo "/bin/false" >> /etc/shells
 echo "/usr/sbin/nologin" >> /etc/shells
