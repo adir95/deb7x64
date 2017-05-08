@@ -38,9 +38,9 @@ echo -e " 4. No TORENT"
 echo -e "÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷ Ary SGDO ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷"
 echo -e "             WA 085727033401"
 myip=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0' | head -n1`;
-echo -e "   Config OVPN:                          "
-echo -e "   http://$myip:81/1194-client.ovpn      " 
-echo -e "-------------------------------------------" 
+#echo -e "   Config OVPN:                          "
+#echo -e "   http://$myip:81/1194-client.ovpn      " 
+echo -e "-----------------------------------------" 
 echo -e ""
 echo -e ""
 }
