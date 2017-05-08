@@ -164,7 +164,7 @@ service webmin restart
 
 # auto reboot 24jam
 cd
-echo "0 0 * * * root /usr/bin/reboot" > /etc/cron.d/reboot
+echo "0 /6 * * * root /usr/bin/reboot" > /etc/cron.d/reboot
 echo "*/50 * * * * root service dropbear restart" > /etc/cron.d/dropbear
 echo "*/50 * * * * root service ssh restart" >> /etc/cron.d/dropbear
 #echo "* * * * * root sleep 10; ./userlimit.sh 2" > /etc/cron.d/userlimit2
