@@ -240,7 +240,7 @@ kern=$( uname -r )
 bdates=$( date )
 # Output of results 
 echo "÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷"
-echo "System Info VPS Server SG.DSG.DO" | tee -a $HOME/bench.log 
+echo "System Info VPS Server SG.DO" | tee -a $HOME/bench.log 
 echo "-----------" | tee -a $HOME/bench.log 
 echo "Hostname  : $hn" | tee -a $HOME/bench.log 
 echo "OS        : $opsy" | tee -a $HOME/bench.log 
