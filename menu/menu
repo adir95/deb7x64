@@ -305,7 +305,7 @@ do
            echo "* * * * * root sleep 30; ./userlimit.sh 2" > /etc/cron.d/userlimit4
            echo "* * * * * root sleep 40; ./userlimit.sh 2" > /etc/cron.d/userlimit5
            echo "* * * * * root sleep 50; ./userlimit.sh 2" > /etc/cron.d/userlimit6
-	   e#cho "@reboot root /root/userlimitssh.sh" >> /etc/cron.d/userlimitreboot
+	   #cho "@reboot root /root/userlimitssh.sh" >> /etc/cron.d/userlimitreboot
 	   echo "* * * * * root ./userlimitssh.sh 2" >> /etc/cron.d/userlimit1
 	   echo "* * * * * root sleep 11; ./userlimitssh.sh 2" >> /etc/cron.d/userlimit2
            echo "* * * * * root sleep 21; ./userlimitssh.sh 2" >> /etc/cron.d/userlimit3
