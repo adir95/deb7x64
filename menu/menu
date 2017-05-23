@@ -19,7 +19,7 @@ exp="$(chage -l $uname | grep "Account expires" | awk -F": " '{print $2}')"
 echo -e "$pass\n$pass\n"|passwd $uname &> /dev/null
 echo -e ""
 echo -e "÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷" 
-echo -e "  Informasi Akun Baru SSH Server SG.DO" 
+echo -e "         Informasi Akun Baru SSH"
 echo -e "========================================="
 echo -e "     Host/IP: $myip" 
 echo -e "     Username: $uname" 
@@ -35,8 +35,8 @@ echo -e " 1. No DDOS No HACKING"
 echo -e " 2. No CARDING No SPAMING"
 echo -e " 3. No MULTI LOGIN" 
 echo -e " 4. No TORENT"
-echo -e "÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷ Ary SGDO ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷"
-echo -e "             WA 085727033401"
+echo -e "÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷"
+echo -e "          "
 myip=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0' | head -n1`;
 #echo -e "   Config OVPN:                          "
 #echo -e "   http://$myip:81/1194-client.ovpn      " 
@@ -240,7 +240,7 @@ kern=$( uname -r )
 bdates=$( date )
 # Output of results 
 echo "÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷"
-echo "System Info VPS Server SG.DO" | tee -a $HOME/bench.log 
+echo "System Info VPS SSH" | tee -a $HOME/bench.log 
 echo "-----------" | tee -a $HOME/bench.log 
 echo "Hostname  : $hn" | tee -a $HOME/bench.log 
 echo "OS        : $opsy" | tee -a $HOME/bench.log 
@@ -252,7 +252,7 @@ echo "Frequency : $freq MHz" | tee -a $HOME/bench.log
 echo "Uptime    : $up" | tee -a $HOME/bench.log 
 echo "Memory    : $tram MB" | tee -a $HOME/bench.log 
 echo "Swap      : $vram MB" | tee -a $HOME/bench.log 
-echo "÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷ Ary SGDO ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷"
+echo "÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷"
 echo ""
 PS3='Silahkan ketik nomor pilihan anda lalu tekan ENTER: '
 options=("Buat User" "Buat User Trial" "Perbarui User" "Semua User" "Hapus User" "Monitor User Login" "Aktifkan Kill Multi Login" "Matikan Kill Multi Login" "User Belum Kadaluarsa" "User Sudah Kadaluarsa" "Restart Server" "Ganti Password User" "Ganti Password VPS" "Used Data By Users" "bench-network" "Ram Status" "Bersihkan cache ram" "Ganti Port OpenVPN" "Ganti Port Dropbear" "Ganti Port Openssh" "Ganti Port Squid3" "Speedtest" "Edit Banner Login" "Lihat Lokasi User" "Quit")
