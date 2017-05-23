@@ -63,10 +63,6 @@ chmod +x /usr/bin/screenfetch
 echo "clear" >> .profile
 echo "screenfetch" >> .profile
 
-# setting vnstat
-vnstat -u -i venet0
-service vnstat restart
-
 # login setting
 echo "/bin/false" >> /etc/shells
 echo "/usr/sbin/nologin" >> /etc/shells
